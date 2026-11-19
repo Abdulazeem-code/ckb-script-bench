@@ -1,0 +1,1 @@
+result: COMPILE ERROR (see /home/walzeem/ckb-script-bench/runs/run-02-agents/gemini-pro/B01-simple-udt-brief/build.log)

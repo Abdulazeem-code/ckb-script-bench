@@ -1,0 +1,2 @@
+[dependencies]
+ckb-std = "1.1"

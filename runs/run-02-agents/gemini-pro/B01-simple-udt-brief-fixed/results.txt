@@ -1,0 +1,18 @@
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.21s
+     Running unittests src/lib.rs (target/debug/build/tests/c365723115902890/out/tests-c365723115902890)
+
+running 11 tests
+test simple_udt::a1_mint_without_owner ... ok
+test simple_udt::a2_inflate_by_one ... ok
+test simple_udt::a3_overflow_wraps ... ok
+test simple_udt::a4_other_token_counted ... ok
+test simple_udt::a5_owner_lock_on_output_only ... ok
+test simple_udt::a6_short_data ... ok
+test simple_udt::a7_args_with_extra_byte ... ok
+test simple_udt::p1_transfer ... ok
+test simple_udt::p2_burn ... ok
+test simple_udt::p3_owner_mint ... ok
+test simple_udt::p4_merge_with_other_token_present ... ok
+
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 19 filtered out; finished in 0.09s
+

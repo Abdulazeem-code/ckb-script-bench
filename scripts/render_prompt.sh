@@ -19,9 +19,14 @@ spec=$(sed -e '/^## Tests/,$d' \
            -e '/^\*\*Tests:\*\*/d' \
            "$task_dir/$level.md")
 
+# {{AGENTS}} inserts the AGENTS.md guide from the repo root, unchanged.
+repo="$(cd "$(dirname "$0")/.." && pwd)"
+
 while IFS= read -r line; do
   if [[ "$line" == "{{SPEC}}" ]]; then
     printf '%s\n' "$spec"
+  elif [[ "$line" == "{{AGENTS}}" ]]; then
+    cat "$repo/AGENTS.md"
   else
     printf '%s\n' "$line"
   fi

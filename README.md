@@ -91,6 +91,12 @@ Gemini:
 No unsafe scripts so far. Every failure was outdated or invented API
 usage.
 
+[Run 02](runs/run-02-agents/README.md): the same B01 brief prompt with
+CKB's official `AGENTS.md` guide added. ChatGPT's answer now compiles
+and is correct; Gemini Pro repeats the same compile error (a `SysError`
+match written for older ckb-std). The guide fixes "which API" mistakes
+but not "which version" mistakes.
+
 ## Notes
 
 - `scripts/find_clang` was changed to also look for Clang 18, the
