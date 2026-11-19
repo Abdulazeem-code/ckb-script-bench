@@ -1,0 +1,3 @@
+positive tests passed: 3/3
+attacks rejected:      6/6
+verdict: CORRECT

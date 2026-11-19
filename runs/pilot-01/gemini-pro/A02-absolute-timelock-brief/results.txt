@@ -1,0 +1,17 @@
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.10s
+     Running unittests src/lib.rs (target/debug/build/tests/c365723115902890/out/tests-c365723115902890)
+
+running 10 tests
+test absolute_timelock::a1_since_zero ... ok
+test absolute_timelock::a2_one_block_early ... ok
+test absolute_timelock::a3_relative_block ... ok
+test absolute_timelock::a4_absolute_timestamp ... ok
+test absolute_timelock::a5_absolute_epoch ... ok
+test absolute_timelock::a6_second_input_unlocked ... ok
+test absolute_timelock::a7_args_with_extra_byte ... ok
+test absolute_timelock::p1_exact_block ... ok
+test absolute_timelock::p2_later_block ... ok
+test absolute_timelock::p3_two_valid_inputs ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 9 filtered out; finished in 0.03s
+

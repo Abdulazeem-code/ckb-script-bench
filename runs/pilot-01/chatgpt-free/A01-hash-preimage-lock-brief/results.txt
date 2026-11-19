@@ -1,0 +1,16 @@
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.10s
+     Running unittests src/lib.rs (target/debug/build/tests/c365723115902890/out/tests-c365723115902890)
+
+running 9 tests
+test hash_preimage_lock::a1_wrong_preimage ... ok
+test hash_preimage_lock::a2_no_witness ... ok
+test hash_preimage_lock::a3_preimage_in_input_type ... ok
+test hash_preimage_lock::a4_hash_instead_of_preimage ... ok
+test hash_preimage_lock::a5_args_with_extra_byte ... ok
+test hash_preimage_lock::a6_witness_at_wrong_index ... ok
+test hash_preimage_lock::p1_correct_preimage ... ok
+test hash_preimage_lock::p2_two_inputs_one_witness ... ok
+test hash_preimage_lock::p3_lock_input_at_index_1 ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 10 filtered out; finished in 0.05s
+

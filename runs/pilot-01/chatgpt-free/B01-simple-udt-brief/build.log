@@ -1,0 +1,71 @@
+Cleaning build/release directory...
+mkdir -p build/release
+make[1]: Entering directory '/tmp/tmp.fhLlHhRZb3/contracts/simple-udt'
+RUSTFLAGS="-C target-feature=+zba,+zbb,+zbc,+zbs -C passes=lower-atomic -C debug-assertions" TARGET_CC="clang-18" TARGET_AR="llvm-ar-18" \
+	cargo build --target=riscv64imac-unknown-none-elf --release 
+   Compiling simple-udt v0.1.0 (/tmp/tmp.fhLlHhRZb3/contracts/simple-udt)
+warning: unused import: `alloc::vec::Vec`
+  --> contracts/simple-udt/src/main.rs:12:5
+   |
+12 | use alloc...::Vec;
+   |     ^^^^^...^^^^^
+   |
+   = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+error[E0599]: no method named `hash` found for struct `Script` in the current scope
+   --> contracts/simple-udt/src/main.rs:58:26
+    |
+ 58 | ...pe.hash() ...
+    |       ^^^^ method not found in `Script`
+    |
+   ::: /home/walzeem/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/hash/mod.rs:198:8
+    |
+198 | ...fn hash<H:...
+    |       ---- the method is available for `Script` here
+    |
+    = help: items from traits can only be used if the trait is in scope
+help: trait `Hash` which provides `hash` is implemented but not in scope; perhaps you want to import it
+    |
+  4 + use core::hash::Hash;
+    |
+
+error[E0599]: no method named `hash` found for struct `Script` in the current scope
+   --> contracts/simple-udt/src/main.rs:88:30
+    |
+ 88 | ...ck.hash();
+    |       ^^^^ method not found in `Script`
+    |
+   ::: /home/walzeem/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/hash/mod.rs:198:8
+    |
+198 | ...fn hash<H:...
+    |       ---- the method is available for `Script` here
+    |
+    = help: items from traits can only be used if the trait is in scope
+help: trait `Hash` which provides `hash` is implemented but not in scope; perhaps you want to import it
+    |
+  4 + use core::hash::Hash;
+    |
+
+error[E0599]: no method named `hash` found for struct `Script` in the current scope
+   --> contracts/simple-udt/src/main.rs:116:28
+    |
+116 | ...pt.hash();
+    |       ^^^^ method not found in `Script`
+    |
+   ::: /home/walzeem/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/hash/mod.rs:198:8
+    |
+198 | ...fn hash<H:...
+    |       ---- the method is available for `Script` here
+    |
+    = help: items from traits can only be used if the trait is in scope
+help: trait `Hash` which provides `hash` is implemented but not in scope; perhaps you want to import it
+    |
+  4 + use core::hash::Hash;
+    |
+
+For more information about this error, try `rustc --explain E0599`.
+warning: `simple-udt` (bin "simple-udt") generated 1 warning
+error: could not compile `simple-udt` (bin "simple-udt") due to 3 previous errors; 1 warning emitted
+make[1]: *** [Makefile:42: build] Error 101
+make[1]: Leaving directory '/tmp/tmp.fhLlHhRZb3/contracts/simple-udt'
+make: *** [Makefile:43: build] Error 2

@@ -2,6 +2,7 @@
 members = [
     "contracts/absolute-timelock",
     "contracts/hash-preimage-lock",
+    "contracts/simple-udt",
     "tests",
 ]
 resolver = "2"

@@ -15,6 +15,8 @@ use std::str::FromStr;
 mod absolute_timelock;
 #[cfg(test)]
 mod hash_preimage_lock;
+#[cfg(test)]
+mod simple_udt;
 
 // Set BENCH_BIN_DIR to a folder of compiled scripts (e.g. AI-generated ones)
 // to run the task tests against those binaries instead of build/release.
